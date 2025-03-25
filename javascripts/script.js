@@ -6,3 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Поздравляю, вы выбрали платье!");
     });
 });
+const image = document.getElementById('myImage');
+
+image.addEventListener('click', function() {
+    // Добавляем класс для подсветки
+    image.classList.toggle('red-highlight');
+});

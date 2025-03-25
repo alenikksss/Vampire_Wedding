@@ -40,17 +40,17 @@ body {
   font-family:"bitter";
   color: black;
   font-size: 2vw; */
-
+/* 
   /* .h2 {
     display: flex;
     
-  }
+  } */
 .form-container {
   width: 50vw;
   margin-top: 25vw;
   position: absolute;
   left: 24%;
-  border-radius: 5px;
+  
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -60,10 +60,10 @@ body {
   font-size: 2vw;
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 2vw;
 }
 button {
-  padding: 10px 15px;
+  padding: 1vw 2vw;
   background-color: #834c4c;
   color: white;
   border: none;
@@ -71,8 +71,8 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #834c4c;
-} */
+  background-color: #791010;
+} 
 
 .form-container {
   width: 24vw;
@@ -81,6 +81,7 @@ button:hover {
   padding: 2vw;
   text-align: center;
   margin-top: 25vw;
+  font-size: 1vw;
 }
 .form-group {
   margin-bottom: 1vw;
@@ -114,7 +115,7 @@ button:hover {
   text-align: center; 
 } */
  .section2 {
-  height: 56vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
  }
@@ -139,14 +140,30 @@ button:hover {
   margin-top: 2vw;
   style: cursor;
 }
+.platya img {
+  width: 20vw;
+  height: 23vw;
+}
+
+.platye1
+.platye2
+.platye3
+.platye4
+.platye5
+.platye6
+ {
+  transition: box-shadow 0.3s ease; 
+}
+
+.red-highlight {
+  box-shadow: 0 0 10px red; 
+}
 
 .red-border {
     border: 5px solid red; 
 }
 .section3 {
-  height: 58vw;
-  display: flex;
-  
+ width: 100%;
  }
 .tittle {
   height: 4vw;
@@ -154,11 +171,11 @@ button:hover {
   font-family: "bitter";
   color: white;
   margin-left: 28vw;
-  margin-top: 14vw;
+  margin-top: 4vw;
 }
 .portret {
   margin-left: 8vw;
-  margin-top: 19vw;
+  margin-top: 4vw;
   width: 36vw;
   height: 46vw;
 }
@@ -169,8 +186,39 @@ button:hover {
   flex-wrap: wrap;
   flex-direction: column;
   margin-left: 54vw;
-  margin-top: 5vw;
+  margin-top: -47vw;
   justify-content: space-between;
   align-items: center;
   align-content: stretch;
+  padding: 1vw 1vw;
+  }
+.rectangles img {
+  width: 15vw;
+  height: 14vw;
 }
+.ukrashenia {
+  width: 35vw;
+  height: 43vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 45vw;
+  margin-top: -46vw;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding: 1vw 1vw;
+}
+.ukrashenia img {
+  width: 13vw;
+  height: 11vw;
+}
+
+.sergi1 {
+  position: absolute;
+  height: 9vw;
+  width: 13vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../images/sergi11.png);
+} 
