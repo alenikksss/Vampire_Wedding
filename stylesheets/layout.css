@@ -22,6 +22,8 @@ body {
 .form-container {
   transition: all 0.5s ease-in-out;
   opacity: 1;
+  width: 10vw;
+  height: 15vw;
 }
 
 .form-container-animated {
@@ -183,6 +185,7 @@ body {
   align-items: center;
   align-content: stretch;
   padding: 1vw 1vw;
+
 }
 .ukrashenia img {
   width: 13vw;
@@ -202,7 +205,7 @@ body {
   height: 45vw;
   margin-left: 70vw;
   margin-top: -51vw;
-  
+
 }
 .sergi1 {
   display: flex;
@@ -251,6 +254,95 @@ body {
 }
 .podval {
   width: 98vw;
-  height: ;
+  margin-top: -1vw;
+  animation-iteration-count:infinite;
+}
+.ukrashenia img {
+  cursor: move;
+  user-select: none;
+  transition: transform 0.2s;
 }
 
+.sergi img {
+  cursor: move;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.ukrashenia img:hover, .sergi img:hover {
+  transform: scale(1.05);
+}
+
+.sergi img:hover {
+  transform: scale(1.05);
+}
+
+
+.section3 {
+  position: relative;
+  min-height: 500px;
+}
+
+
+.knopka {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  background-color: #980000;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+.knopka:hover {
+  transform: translateX(-50%) scale(1.05);
+  background-color: #980000;
+}
+
+.knopka:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.5s ease-out;
+  z-index: 1000;
+  display: none;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+      transform: translateX(0);
+      opacity: 1;
+  }
+  to {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+}

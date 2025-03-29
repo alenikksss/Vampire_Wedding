@@ -41,22 +41,41 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Получаем все изображения платьев
     const dresses = document.querySelectorAll('.platya img');
     
-    // Добавляем обработчик клика для каждого платья
+
     dresses.forEach(dress => {
         dress.addEventListener('click', function() {
-            // Если платье уже выбрано, убираем выделение
+            
             if (this.classList.contains('selected')) {
                 this.classList.remove('selected');
                 return;
             }
-            
-            // Убираем класс selected у всех платьев
             dresses.forEach(d => d.classList.remove('selected'));
-            // Добавляем класс selected к выбранному платью
             this.classList.add('selected');
         });
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const knopka = document.querySelector('.knopka');
+    
+
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = 'Поздравляю, ваш заказ оформлен!';
+    document.body.appendChild(notification);
+
+    knopka.addEventListener('click', function() {
+
+        notification.style.display = 'block';
+        
+
+        setTimeout(() => {
+            notification.style.animation = 'slideOut 0.5s ease-out';
+            setTimeout(() => {
+                notification.style.display = 'none';
+                notification.style.animation = 'slideIn 0.5s ease-out';
+            }, 500);
+        }, 3000);
     });
 });
