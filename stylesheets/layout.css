@@ -8,6 +8,26 @@ body {
   display: flex;
   position: relative;
  }
+ .section1 {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.section1-animated {
+  background-image: url('../images/spread.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container {
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.form-container-animated {
+  opacity: 0;
+  transform: translateY(-20px);
+}
  .letter1 {
   width:67vw;
   height:50vw;
@@ -22,9 +42,9 @@ body {
   height: 4vw;
   position: absolute;
   margin-top: 17vw;
-  left: 35%; 
+  left: 32%; 
   color: white;
-  font-size: 3vw;
+  font-size: 5vw;
   font-family:"Great Vibes";
  }
  /* .textfirst {
@@ -45,62 +65,7 @@ body {
     display: flex;
     
   } */
-.form-container {
-  width: 50vw;
-  margin-top: 25vw;
-  position: absolute;
-  left: 24%;
-  
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  font-family:"Great Vibes";
-  color: black;
-  font-size: 2vw;
-}
-.form-group {
-  margin-bottom: 2vw;
-}
-button {
-  padding: 1vw 2vw;
-  background-color: #834c4c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #791010;
-} 
 
-.form-container {
-  width: 24vw;
-  height: 24vw;
-  margin: 0 auto;
-  padding: 2vw;
-  text-align: center;
-  margin-top: 25vw;
-  font-size: 1vw;
-}
-.form-group {
-  margin-bottom: 1vw;
-}
-button {
-  padding: 1vw 2vw;
-  background-color: #d45151;
-  color: white;
-  border: none;
-  border-radius: 0,4vw;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #d45151;
-}
-#message {
-  margin-top: 2vw;
-  font-weight: bold;
-}
 /* -------------------------------- */
 /* .rectangle {
   width: 63vw;
@@ -120,9 +85,10 @@ button:hover {
   flex-direction: column;
  }
 .secondp {
-  left: 50%;
+  width: 47vw;
+  height: 6vw;
   font-size:5vw ;
-  margin-left: 22vw;
+  margin-left: 27vw;
   color: white;
   font-family: "Great Vibes";
   margin-top: 4vw;
@@ -141,8 +107,17 @@ button:hover {
   style: cursor;
 }
 .platya img {
-  width: 20vw;
-  height: 23vw;
+  width: 21vw;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 3vw;
+}
+
+.platya img.selected {
+    border: 4px solid #ac0000;
+    transform: scale(1.05);
+    box-shadow: 0 0 0px rgba(255, 0, 0, 0.3);
 }
 
 .platye1
@@ -212,13 +187,70 @@ button:hover {
 .ukrashenia img {
   width: 13vw;
   height: 11vw;
+  
 }
 
+.sergi {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding: 5vw 5vw;
+  width: 9vw;
+  height: 45vw;
+  margin-left: 70vw;
+  margin-top: -51vw;
+  
+}
 .sergi1 {
-  position: absolute;
-  height: 9vw;
-  width: 13vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url(../images/sergi11.png);
-} 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding: 1vw 1vw;
+  width: 9vw;
+  height: 12vw;
+}
+.sergi1 img {
+  width: 4vw;
+  height: 12vw;
+}
+.sergi2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  align-content: stretch;
+  padding: 1vw 1vw;
+  width: 10vw;
+  height: 12vw;
+}
+.sergi2 img {
+  width: 3vw;
+  height:12vw;
+}
+.sergi3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  align-content: stretch;
+  padding: 1vw 1vw;
+  width: 10vw;
+  height: 11vw;
+}
+.sergi3 img {
+  width: 5vw;
+  height:12vw;
+}
+.podval {
+  width: 98vw;
+  height: ;
+}
+
